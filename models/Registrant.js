@@ -41,11 +41,12 @@ const RegistrantSchema = new mongoose.Schema({
     githubProfile: {
         type: String,
         required: true,
+        minlength: 18,
     },
     codingProfile: {
         type: String,
         required: true,
-        minlength: 20,
+        minlength: 27,
     }
 }, { timestamps: true});
 
